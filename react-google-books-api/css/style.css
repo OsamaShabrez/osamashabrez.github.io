@@ -1,0 +1,87 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    padding-top: 56px;
+}
+
+.text-white-50 {
+    color: rgba(255, 255, 255, .5);
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.lh-100 {
+    line-height: 1;
+}
+
+.lh-125 {
+    line-height: 1.25;
+}
+
+.lh-150 {
+    line-height: 1.5;
+}
+
+.card-deck .card {
+    margin-bottom: 15px;
+}
+
+.card-deck .card .card-remove {
+    position: absolute;
+    right: 5px;
+    color: #C0C0C0;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.card-deck .card .card-remove:hover {
+    color: red;
+    transform: scale(1.5);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.card-deck .card .card-footer .card-edit {
+    text-align: right;
+    margin-top: -25px;
+}
+
+@media (min-width: 0) {
+    .card-deck .card {
+        flex: 0 0 calc(100% - 30px);
+    }
+}
+
+@media (min-width: 576px) {
+    .card-deck .card {
+        flex: 0 0 calc(100% - 30px);
+    }
+}
+
+@media (min-width: 768px) {
+    .card-deck .card {
+        flex: 0 0 calc(50% - 30px);
+    }
+}
+
+@media (min-width: 992px) {
+    .card-deck .card {
+        flex: 0 0 calc(33.3333333333% - 30px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .card-deck .card {
+        flex: 0 0 calc(25% - 30px);
+    }
+}
