@@ -9,7 +9,7 @@
     <style>
       html {position: relative;min-height: 100%;}
       body {padding-top: 1rem;margin-bottom: 150px;}
-      #quaggaJSLiveScan {max-width: 100%;max-height: 100%;background-color: #EEE;}
+      #quaggaJSLiveScan {max-width: 100%;max-height: auto;background-color: #EEE;}
       .footer {position: absolute;bottom: 0;width: 100%;height: 150px;background-color: #f5f5f5;overflow: scroll;}
       .footer .console h2 {font-size: 14px; padding-top: 10px;}
       .footer .console p {margin: 0px;font-size: 10px;font-family: 'Courier New', Courier, monospace;}
@@ -48,10 +48,20 @@
               inputStream : {
                 name : "Live",
                 type : "LiveStream",
-                target: document.querySelector('#quaggaJSLiveScan')
+                target: document.querySelector('#quaggaJSLiveScan'),
+                constraints: {
+                  width: $("quaggaJSLiveScan").width(),
+                  height: 480,
+                  facingMode: "environment",
+                  deviceId: "7832475934759384534"
+                }
               },
               decoder : {
-                readers : ["code_128_reader"]
+                readers : ["code_128_reader"],
+                debug: {
+                  drawBoundingBox: true,
+                  drawScanLine: true
+                }
               }
             }, function(error) {
               if (error) {
