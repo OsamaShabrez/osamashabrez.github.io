@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <title>Mobile Library Index Page</title>
+        <style>
+            li {overflow-wrap: break-word;}
+        </style>
+    </head>
+    <body>
+        <h1>Index Page</h1>
+        <div>
+            <h3>Scanner APIs</h3>
+            <ol>
+                <li><a href="/quaggaJS/index.html">quaggaJS - Barcode Reader</a> 92kb (doesn't support QR Code)<br>
+                - Takes array of readers as input but more readers = more false positives<br/>
+                <a href="https://github.com/serratus/quaggaJS">https://github.com/serratus/quaggaJS</a></li>
+                <li>jsQR - QR Code Reader - 248KB not stable, false positives and decoding issues<br/>
+                <a href="https://github.com/cozmo/jsQR">https://github.com/cozmo/jsQR</a></li>
+                <li><a href="zxing-js/index.html">zxing-js</a> 205KB (barcode and QRcode scanning)<br/>
+                - Served via unpkg: <a href="https://unpkg.com/@zxing/library@latest">https://unpkg.com/@zxing/library@latest</a>, current version: 0.15.2<br/>
+                - Can decode from video stream and images without configuring reader details. Supports Code128, EAN-13, ITF and QR codes.<br/>
+                - ZXing can also generate QR Code SVG</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Camera APIs</h3>
+            <ol>
+                <li><a href="mediaDevices/index.html">Navigator.MediaDevices</a><br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices">MediaDevices Compatibility - No IE Support</a><br/>
+                Native APi, works well on all modern browsers, can be extended to use as video recorder.</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Signature APIs</h3>
+            <ol>
+                <li><a href="signaturePad/index.html">SignaturePad</a><br/>
+                Served via: <a href="https://szimek.github.io/signature_pad/js/signature_pad.umd.js">https://szimek.github.io/signature_pad/js/signature_pad.umd.js</a></li>
+            </ol>
+        </div>
+    </body>
+</html>
